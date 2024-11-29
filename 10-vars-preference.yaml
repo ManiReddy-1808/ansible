@@ -3,7 +3,7 @@
   become: true
   vars:
     MSG: "I am from Play Level"
-  vars_file:
+  vars_files:
   - vars.yaml
   vars_prompt:
   - name: MESSAGE
