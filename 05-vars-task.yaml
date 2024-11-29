@@ -5,14 +5,14 @@
     Trainer: Mani
     Duration: "15hrs"
   tasks:
-  vars:
-    Course: Ansible
-    Trainer: ManiKanta
-    Duration: "25hrs"
-  - name: Print info
+  - name: Print task level Vars
+    vars:
+      Course: Ansible
+      Trainer: ManiKanta
+      Duration: "25hrs"
     ansible.builtin.debug:
       msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
 
-  - name: Print info
+  - name: Print play level Vars
     ansible.builtin.debug:
       msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
