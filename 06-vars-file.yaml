@@ -1,0 +1,8 @@
+- name: vars using file
+  hosts: web
+  become: true
+  vars_file:
+  - vars.yaml
+  - name: Print variable using var file
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
