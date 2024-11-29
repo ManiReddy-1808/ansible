@@ -1,3 +1,5 @@
     Course: Terraform
     Trainer: Mani
     Duration: "15hrs"
+
+    MSG: "I am from vars File"

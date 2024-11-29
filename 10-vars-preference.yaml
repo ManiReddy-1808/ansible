@@ -1,0 +1,17 @@
+- name: variable preference
+  hosts: localhost
+  become: true
+  vars:
+    MSG: "I am from Play Level"
+  vars_file:
+  - vars.yaml
+  vars_prompt:
+  - name: MESSAGE
+    prompt: MSG from Prompt
+    private: false
+  tasks:
+  - name: checking Preference
+    vars:
+      MSG: "I am from task Level"
+    ansible.builtin.debug:
+      msg: "Hello, Iam from {{MSG}}"
