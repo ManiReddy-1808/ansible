@@ -1,0 +1,10 @@
+- name: variables
+  hosts: web
+  vars:
+    Course: Terraform
+    Trainer: Mani
+    Duration: "15hrs"
+  tasks:
+  - name: Print info
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
