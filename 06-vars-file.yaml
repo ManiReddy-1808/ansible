@@ -1,7 +1,7 @@
 - name: vars using file
   hosts: web
   become: true
-  vars_file:
+  vars_files:
   - vars.yaml
   tasks:
   - name: Print variable using var file
