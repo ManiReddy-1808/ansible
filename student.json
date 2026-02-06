@@ -1,0 +1,44 @@
+{
+    "students": [
+        {
+            "firstName": "Manikanta Reddy",
+            "dob": "1991-01-01",
+        
+            "addresses": [ 
+                {
+                    "type": "perm",
+                    "flatNumber": 104,
+                    "street": "Sherine Colony",
+                    "city": "Macherla"
+                },
+                {
+                    "type" : "current",
+                    "flatNumber": 104,
+                    "street": "Sherine Colony",
+                    "city": "Macherla"
+                }
+            ],
+            "skills": ["java", "devops", "cloud"]
+        },
+        {
+            "firstName": "Manikanta Reddy",
+            "dob": "1991-01-01",
+        
+            "addresses": [ 
+                {
+                    "type": "perm",
+                    "flatNumber": 104,
+                    "street": "Sherine Colony",
+                    "city": "Macherla"
+                },
+                {
+                    "type" : "current",
+                    "flatNumber": 104,
+                    "street": "Sherine Colony",
+                    "city": "Macherla"
+                }
+            ],
+            "skills": ["java", "devops", "cloud"]
+        }
+    ]
+}
