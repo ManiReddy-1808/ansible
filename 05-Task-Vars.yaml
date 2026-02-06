@@ -7,6 +7,6 @@
   tasks:
   - name: print variables
     vars:
-    FIRSTNAME: "JaganMohan Reddy"
+      FIRSTNAME: "JaganMohan Reddy"
     ansible.builtin.debug:
       msg: "My FIRSTNAME is: {{ FIRSTNAME }}, and LASTNAME is: {{ LASTNAME }}"
