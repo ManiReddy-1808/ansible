@@ -7,7 +7,7 @@
     private: false
 
   - name: password
-    prompt: enter password
+    prompt: Enter password
     private: true
 
   tasks:
