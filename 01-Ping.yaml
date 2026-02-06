@@ -3,3 +3,7 @@
   tasks: 
   - name: Pinging the web server  
     ansible.builtin.ping:
+
+
+# To ping the server
+# ansible all -i 172.31.29.188, -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ping
