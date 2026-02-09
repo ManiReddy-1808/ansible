@@ -1,0 +1,17 @@
+- name: variable preference
+  hosts: local
+  connection: local
+  vars:
+    PREFERENCE: "play-level"
+  vars_files:
+  - names.yaml
+  vars_prompt:
+  - name: PREFERENCE
+    prompt: "prompt-level" 
+    private: false
+  tasks:
+  - name: var from task-level
+    vars:
+      PREFERENCE: "task-level"
+    ansible.builtin.debug:
+      msg: "Variable value from {{ PREFERENCE }}"

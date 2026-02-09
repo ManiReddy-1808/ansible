@@ -5,3 +5,5 @@
   - name: vars form arguments
     ansible.builtin.debug:
       msg: "Variable value from: {{ ARGS }}"
+
+# To run: ansible-playbook -i inventory.ini -e ARGS=Arguments 09-vars-args.yaml
