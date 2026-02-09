@@ -11,6 +11,15 @@
     ansible.builtin.debug:
       msg: "{{ user_output }}"
 
+  - name: shell module test with files
+    ansible.builtin.shell: ls -lhtr > files.txt
+    register: files
+
+  - name: print files output 
+    ansible.builtin.debug:
+      msg: "{{ files }}" 
+
+
 
 # command
 # =======
