@@ -1,5 +1,5 @@
 - name: installing packages
-  host: local
+  hosts: local
   connection: local
   tasks:
   - name: Installing list of packages
