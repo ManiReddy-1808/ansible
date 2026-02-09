@@ -1,0 +1,13 @@
+- name: installing packages
+  hosts: local
+  connection: local
+  become: yes  # become root user
+  tasks:
+  - name: Installing list of packages
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: present
+    loop:
+    - { name: "nginx", state: "absent" }
+    - { name: "mysql", state: "present" }
+    - { name: "python", state: "absent" }
