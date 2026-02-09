@@ -1,0 +1,7 @@
+- name: vars from arguments
+  hosts: local
+  connection: local
+  tasks:
+  - name: vars form arguments
+    ansible.builtin.debug:
+      msg: "Variable value from: {{ ARGS }}"
