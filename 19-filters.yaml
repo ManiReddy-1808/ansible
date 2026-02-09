@@ -11,3 +11,4 @@
   - name: string to list
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
+    
