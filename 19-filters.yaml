@@ -1,0 +1,7 @@
+- name: dmo on filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: greeting
+    ansible.builtin.debug:
+      msg: "Hi I am mani {{ greeting }}"
