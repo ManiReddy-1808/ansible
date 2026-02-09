@@ -4,7 +4,7 @@
   tasks:
   - name: print names
     ansible.builtin.debug: 
-      msg: "Hai hello: {{ items }}"  # item is reserved keywork in ansible
+      msg: "Hai hello: {{ item }}"  # item is reserved keywork in ansible
     loop:
     - Mani
     - Kanta
