@@ -1,9 +1,9 @@
 - name: dmo on filters
   hosts: local
   connection: local
-  tasks:
   vars:
     topics: linux, shell, ansible
+  tasks:
   - name: greeting
     ansible.builtin.debug:
       msg: "Hi mani {{ greeting | default ('Good Morning') }}"
