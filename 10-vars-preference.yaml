@@ -1,8 +1,8 @@
 - name: variable preference
   hosts: local
   connection: local
-  vars:
-    PREFERENCE: "play-level"
+  # vars:
+  #   PREFERENCE: "play-level"
   vars_files:
   - names.yaml
   # vars_prompt:
