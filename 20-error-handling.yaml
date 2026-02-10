@@ -15,3 +15,5 @@
   - name: create user id
     ansible.builtin.command: useradd roboshop
     when: user_output.rc != 0
+
+# To get idempotency of ANSIBLE use collections (.user) instead of command modules

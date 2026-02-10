@@ -1,0 +1,8 @@
+- name: Check Idempotency
+  hosts: local
+  connection: local
+  tasks:
+  - name: User creation
+    ansible.buitin.user: # Using ansible collection
+      name: mani  # Equivalent to: useradd mani
+      
