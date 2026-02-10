@@ -1,6 +1,7 @@
 - name: Check Idempotency
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: User creation
     ansible.builtin.user: # Using ansible collection
