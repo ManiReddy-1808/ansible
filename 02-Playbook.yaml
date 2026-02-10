@@ -4,3 +4,13 @@
   - name: Print Hello world
     ansible.builtin.debug: 
       msg: "Hello world"
+
+# Playbook is the list of play's contains single / multiple tasks which executes on remote server's 
+
+- name: PLAY-2  # Multi-play
+  hosts: local
+  connection: local
+  tasks:
+  - name: play-2 and task-1
+    ansible.builtin.debug:
+      msg: "Hello from PLAY-2 and TASK-1"
