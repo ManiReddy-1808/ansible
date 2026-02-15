@@ -5,7 +5,7 @@
   - name: print names
     ansible.builtin.debug: 
       msg: "Hai hello: {{ item }}"  # item is reserved keywork in ansible
-    loop:
+    loop:  # List start's with [ or -
     - Mani
     - Kanta
     - Reddy
